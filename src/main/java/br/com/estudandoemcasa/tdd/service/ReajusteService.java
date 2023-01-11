@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 public class ReajusteService {
     public void reajusta(Funcionario funcionario, Desempenho desempenho) {
         if(desempenho == Desempenho.FRACO){
-           funcionario.ajutaSalario(funcionario.getSalario().multiply(new BigDecimal("0.03")));
+           funcionario.ajutaSalario(funcionario.getSalario().multiply(desempenho.reauste()));
         }
     }
 }
