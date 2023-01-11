@@ -5,10 +5,22 @@ import java.math.BigDecimal;
 public enum Desempenho {
     FRACO {
         @Override
-        BigDecimal reauste() {
+        BigDecimal reajuste() {
             return new BigDecimal("0.03");
+        }
+    },
+    MEDIO {
+        @Override
+        BigDecimal reajuste() {
+            return new BigDecimal("0.04");
+        }
+    },
+    FORTE {
+        @Override
+        BigDecimal reajuste() {
+            return new BigDecimal("0.05");
         }
     };
 
-    abstract BigDecimal reauste();
+    abstract BigDecimal reajuste();
 }

@@ -2,12 +2,14 @@ package br.com.estudandoemcasa.tdd.service;
 
 import br.com.estudandoemcasa.tdd.modelo.Funcionario;
 
-import java.math.BigDecimal;
+import static java.lang.Boolean.*;
 
 public class ReajusteService {
     public void reajusta(Funcionario funcionario, Desempenho desempenho) {
-        if(desempenho == Desempenho.FRACO){
-           funcionario.ajutaSalario(funcionario.getSalario().multiply(desempenho.reauste()));
+        for (var atuacao : Desempenho.values()) {
+            if(atuacao.equals(desempenho)){
+                funcionario.ajutaSalario(funcionario.getSalario().multiply(desempenho.reajuste()));
+            }
         }
     }
 }
