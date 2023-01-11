@@ -1,8 +1,8 @@
-package br.com.alura.tdd.service;
+package br.com.estudandoemcasa.tdd.service;
 
 import java.math.BigDecimal;
 
-import br.com.alura.tdd.modelo.Funcionario;
+import br.com.estudandoemcasa.tdd.modelo.Funcionario;
 
 public class BonusService {
 
@@ -10,8 +10,8 @@ public class BonusService {
 		BigDecimal valor = funcionario.getSalario().multiply(new BigDecimal("0.1"));
 		if (valor.compareTo(new BigDecimal("1000")) > 0) {
 			valor = BigDecimal.ZERO;
+
 		}
 		return valor;
 	}
-
 }
