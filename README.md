@@ -21,3 +21,6 @@ IMG3: <img src="https://i.imgur.com/xH2dL3V.png" width="560">
   
 When implementing your tests, it is also important to use design patterns so that your tests are future-proof and maintain code quality.</p>
 
+<p><a href="https://cursos.alura.com.br/certificate/320537d3-e343-4962-9c20-f5c2eef4c0b6" target="_blank">finished course</a></p>
+
+
