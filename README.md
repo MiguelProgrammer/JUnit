@@ -19,5 +19,5 @@ IMG3: <img src="https://i.imgur.com/xH2dL3V.png" width="560">
 
 <p>The idea is to build the tests first, as we've always seen and we do the opposite, for example, we create the rules to be tested, in this case, we create the tests and then we create the implementation, as if it were test-oriented. In a way, you realize how different this methodology is and yes, it is possible to see the test to be carried out with different eyes. 
   
-When implementing your tests, it is also important to use design patterns so that your tests are extensive for the future..</p>
+When implementing your tests, it is also important to use design patterns so that your tests are future-proof and maintain code quality.</p>
 
