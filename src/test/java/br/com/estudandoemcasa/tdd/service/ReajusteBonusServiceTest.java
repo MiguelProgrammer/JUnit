@@ -12,9 +12,9 @@ class ReajusteBonusServiceTest {
     @Test
     void reajusteTresPorCento(){
         ReajusteService reajusteService = new ReajusteService();
-        BigDecimal salario = new BigDecimal("1000");
+        BigDecimal salario = new BigDecimal("6000");
         Funcionario funcionario = new Funcionario("Miguel", LocalDate.now(), salario);
         reajusteService.reajusta(funcionario, Desempenho.FRACO);
-        Assertions.assertEquals(salario.add(new BigDecimal("30").setScale(2)), funcionario.getSalario());
+        Assertions.assertEquals(salario.add(new BigDecimal("180.0").setScale(2)), funcionario.getSalario());
     }
 }

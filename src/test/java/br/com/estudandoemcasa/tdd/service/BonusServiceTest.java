@@ -12,7 +12,7 @@ class BonusServiceTest {
     @Test
     void resultSoma(){
         BonusService bonusService = new BonusService();
-        Funcionario funcionario = new Funcionario("Miguel", LocalDate.now(), new BigDecimal("0"));
+        Funcionario funcionario = new Funcionario("Miguel", LocalDate.now(), new BigDecimal("600000"));
         BigDecimal bonus = bonusService.calcularBonus(funcionario);
         Assertions.assertEquals(new BigDecimal("0.0"), bonus);
     }
